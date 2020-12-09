@@ -1,0 +1,25 @@
+p {
+    text-indent: 10%;
+}
+
+span {
+    background: #000;
+    color: #fff;
+}
+
+.block1 .span__1 {
+    text-transform: capitalize;
+}
+
+.block1 .span__2 {
+    text-transform: uppercase;
+}
+
+.block2 .span__1 {
+    word-spacing: 10px;
+}
+
+.block2 .span__2 {
+    letter-spacing: 8px;
+    white-space: nowrap;
+}
