@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+
+@font-face {
+    /* Title */
+    font-family: 'Lobster';
+    src: url("../fonts/Romantic/Lobster-Regular.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    /* Text */
+    font-family: 'Dancing Script';
+    src: url("../fonts/Romantic/DancingScript-Medium.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    /* Title */
+    font-family: 'Creepster';
+    src: url("../fonts/Scary/Creepster-Regular.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    /* Text */
+    font-family: 'Sancreek';
+    src: url("../fonts/Scary/Sancreek-Regular.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    /* Title */
+    font-family: 'Bulgatti';
+    src: url("../fonts/Business/Bulgatti-xgMV.ttf");
+    font-weight: 500;
+    font-style: normal;
+
+}
+@font-face {
+    /* Text */
+    font-family: 'Satisfy';
+    src: url("../fonts/Business/Satisfy-Regular.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    /* Title */
+    font-family: 'Crazy Killer';
+    src: url("../fonts/Angry/CrazyKiller-1jZB.ttf");
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    /* Text */
+    font-family: 'Bangers';
+    src: url("../fonts/Angry/Bangers-Regular.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    /* Title */
+    font-family: 'Funny Pages Shadow';
+    src: url("../fonts/Funny/funny_pages_shadow.ttf");
+    font-weight: 600;
+    font-style: normal;
+
+}
+@font-face {
+    /* Text */
+    font-family: 'Henny Penny';
+    src: url("../fonts/Funny/HennyPenny-Regular.ttf");
+    font-weight: 500;
+    font-style: normal;
+
+}
+
