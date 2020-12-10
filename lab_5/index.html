@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Oleg lab_5 bootstrap</title>
+<!--    links-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+<div class="container row align-items-start">
+<!--    1st button -->
+    <div class="col-sm-3 justify-content-center align-middle">
+        <button type="button" class="btn btn-danger btn-lg">First</button>
+    </div>
+
+    <div class="col-sm-3 justify-content-center align-middle">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal"
+                data-target="#exampleModalCenter">This
+            is Column!</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal IMG</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+
+                    <div class="modal-body">
+                        <img class="modal-body__img"
+                             src="https://www.pngkey.com/png/detail/93-934135_warrior-clipart-sparta-spartan-soldier-clipart.png"
+                             alt="warrior">
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- slider -->
+    <div class="col-sm-3 justify-content-center header__block3">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slider_1.jpg" class="d-block w-100" alt="sl1">
+                </div>
+                <div class="carousel-item ">
+                    <img src="img/slider_2.jpg" class="d-block w-100" alt="sl2">
+                </div>
+                <div class="carousel-item ">
+                    <img src="img/slider_3.jpg" class="d-block w-100" alt="sl3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+               data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+               data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-sm-3 justify-content-center align-middle">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputName">Введите ваше имя:</label>
+                <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Введите ваш email: </label>
+                <input type="email" class="form-control" id="exampleInputEmail1"
+                       aria-describedby="emailHelp">
+            </div>
+
+            <div class="form-group header__form-textarea">
+                <label for="exampleFormControlTextarea1">Комментарий</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+
+            <div class="color__title justify-content-center text-center">
+                Выберите цвет:
+            </div>
+            <div class="form-check red ">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                       value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Kрасный
+                </label>
+            </div>
+            <div class="form-check yellow">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                       value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Желтый
+                </label>
+            </div>
+            <div class="form-check green ">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                       value="option3">
+                <label class="form-check-label" for="exampleRadios3">
+                    Зеленый
+                    </label>
+            </div>
+
+
+            <div class="color__title justify-content-center text-center">
+                Выберите цвет:
+                </div>
+            <div class="form-check red ">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                       value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Kрасный
+                    </label>
+            </div>
+            <div class="form-check yellow">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                       value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Желтый
+                    </label>
+            </div>
+            <div class="form-check green ">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                       value="option3">
+                <label class="form-check-label" for="exampleRadios3">
+                    Зеленый
+                    </label>
+            </div>
+
+            <!--Checkbox button-->
+            <div class="animal__title text-center">
+                Какие животные предпочтительны:
+                </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    Тигр
+                    </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    Лев
+                    </label>
+            </div>
+
+            <div class="form-check ">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck">
+                    Сова
+                    </label>
+            </div>
+
+            <div class="form-check ">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                <label class="form-check-label" for="defaultCheck">
+                    Корова
+                    </label>
+            </div>
+
+            <div class="header__form-btn text-center">
+                <button type="submit" class="btn btn-primary ">Отправить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Предыдущая</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Следующая</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
