@@ -7,23 +7,18 @@
     flex-wrap: wrap;
 }
 
-#container div {
+#container .item {
     display: flex;
-    height: 130px;
-    width: 180px;
-    background-color: #86ff00;
     align-items: center;
     justify-content: center;
-    border: 5px solid #74b03b;
+    height: 100px;
+    width: 200px;
+    background-color: #e9fce9;
+    border: 5px solid #87ed89;
 }
 
-#container div:nth-child(1) {
-    flex-direction: column;
-}
+#container .col-2 div:nth-child(1) {
 
-#container div:nth-child(2) {
-    flex-direction: column;
     height: 200px;
 }
-
 
