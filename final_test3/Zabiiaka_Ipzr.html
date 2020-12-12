@@ -6,25 +6,235 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>final test 3</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+      * {
+          box-sizing: border-box;
+      }
+
+      iframe {
+          height: 250px;
+          width: 250px;
+      }
+
+      .item {
+          background-color: yellow;
+      }
+
+      #container {
+          display: flex;
+          flex-wrap: nowrap;
+      }
+
+      #container div{
+          margin-right: 15px;
+          margin-bottom: 15px;
+      }
+
+      #container .item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid black;
+      }
+
+      #container .col-1 .item:nth-child(1) {
+          border-top: 4px solid green;
+          border-left: 4px solid green;
+          width: 520px;
+      }
+
+      #container .col-1 .item:nth-child(2) {
+          border-left: 4px dotted red;
+          border-right: 4px dotted red;
+          height: 260px;
+      }
+
+      #container .col-1 .item:nth-child(3) {
+          border-left: 4px solid red;
+          border-bottom: 4px solid red;
+          height: 350px;
+      }
+
+      #container .col-1 div:nth-child(1) {
+          display: inline-block;
+          width: 500px;
+          height: auto;
+          padding: 15px;
+      }
+
+      #container .col-1 div:nth-child(1) div {
+          text-align: left;
+      }
+
+      #container .col-2 div {
+          width: auto;
+          height: 350px;
+      }
+
+
+      #container .col-2 div:nth-child(1) {
+          height: 550px;
+      }
+
+      #container .col-3 .empty{
+          height: 180px;
+      }
+
+      #container .col-3 .item:nth-child(1) {
+          border-right: 4px solid blue;
+          border-top: 4px solid blue;
+      }
+
+      #container .col-3 .item:nth-child(2) {
+          border-top: 5px double orange;
+          border-bottom: 5px double orange;
+      }
+
+      #container .col-3 .item:nth-child(3) {
+          border-right: 4px solid darkred;
+          border-bottom: 4px solid darkred;
+          height: 350px;
+      }
+
+      #container .figure img{
+          height: 250px;
+          width: 400px;
+      }
+
+      #container .lab__links {
+          text-align: center;
+      }
+
+      #container .lab__links ul {
+          list-style: none;
+      }
+
+      #container .lab__links li {
+          display: inline;
+      }
+
+  </style>
 </head>
 <body>
 <div id="container">
+
   <div class="col-1">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
+    <div class="item">
+      <div>WEB-Design</div>
+      <p>
+        Web дизайн – це те по чому “зустрічають” | web дизайн и веб сайт
+        Кожна web студія починає створювати веб сайт з розробки і вибору web дизайну. Для більшості,
+        web дизайн це і початок, і найголовніша частина, тому що більшість сайтів, таких як
+        сайти-візитки, корпоративні сайти, мають іміджеву, інформативну ціль. Тобто, для таких
+        сайтів головне гарно виглядати, справити гідне враження. Коли ми говоримо про веб дизайн,
+        доречно згадати і приказку «зустрічають по одежі, проводжають по уму». Так і є!
+      </p>
+    </div>
+
+    <div class="item">
+      <div class="lab__links">
+        <ul>
+          <div>Github links:</div>
+          <li><a href="https://github.com/olzabi/WEB-design/tree/main/lab_1">lab 1</a></li>
+          <li><a href="https://github.com/olzabi/WEB-design/tree/main/lab_2">lab 2</a></li>
+          <li><a href="https://github.com/olzabi/WEB-design/tree/main/lab_3">lab 3</a></li>
+          <li><a href="https://github.com/olzabi/WEB-design/tree/main/practice">practice</a></li>
+          <li><a href="https://github.com/olzabi/WEB-design/tree/main/lab_4">lab 4</a></li>
+          <li><a href="https://github.com/olzabi/WEB-design/tree/main/lab_5">lab 5</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="svg">
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBBm0WKdrlN1MvlH031HkX2%2FZabiiakaExam%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+      </div>
+    </div>
+
   </div>
 
   <div class="col-2">
-    <div class="item">5</div>
-    <div class="item">6</div>
+    <div class="item"><div class="topics">
+      <h3>Двухуровневый список с разделами на материал<br> дисциплины</h3>
+      <ol>
+        <li>
+          Вступ до web-технологій.
+          <ul>
+            <li><a href="https://dist1.krok.edu.ua/mod/url/view.php?id=2709">The ultimate trip planner</a></li>
+            <li><a href="https://dist1.krok.edu.ua/mod/url/view.php?id=2710">ALL WEBSITES LOOK THE SAME</a></li>
+            <li><a href="https://dist1.krok.edu.ua/mod/url/view.php?id=2711">WHAT ARE DARK PATTERNS?</a></li>
+          </ul>
+        </li>
+
+        <li>
+          Макет web-сторінки
+          <ul>
+            <li>
+              Посилання
+              <a href="https://dist1.krok.edu.ua/mod/page/view.php?id=7511">Посилання</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          Графіка у дизайні
+          <ul>
+            <li>
+              <a href="https://dist1.krok.edu.ua/mod/page/view.php?id=7511">Загальні поняття комп’ютерної графіки</a>
+            </li>
+            <li>
+              <a href="https://dist1.krok.edu.ua/mod/resource/view.php?id=10688">Формати графічних файлів для Веб</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          SVG графіка
+          <ul>
+            <li>
+              <a href="https://dist1.krok.edu.ua/mod/resource/view.php?id=10690">Зображення, що створюються програмним шляхом</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          Типографіка
+          <ul>
+            <li><a href="https://dist1.krok.edu.ua/mod/page/view.php?id=14903">Вступ</a></li>
+          </ul>
+        </li>
+
+        <li>
+          Bootstrap
+          <ul>
+            <li><a href="https://dist1.krok.edu.ua/mod/page/view.php?id=16503">Фреймворк Bootstrap</a></li>
+          </ul>
+        </li>
+
+        <li>
+          WordPress
+          <ul>
+            <li>
+              <a href="https://dist1.krok.edu.ua/mod/page/view.php?id=18633">Что такое WordPress?</a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div></div>
+    <div class="item empty">2</div>
   </div>
 
-  <div class="col-3">
-    <div class="item">4</div>
-    <div class="item">7</div>
-    <div class="item">8</div>
+  <div class="col-3 row">
+    <div class="item">
+      <div class="figure">
+        <figure>
+          <p><img src="img/landscape.jpg" alt="" /></p>
+          <figcaption><i>masterpiece landscape and background image on Windows XP </i></figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="item empty">7</div>
+    <div class="item empty">8</div>
   </div>
 </div>
 
